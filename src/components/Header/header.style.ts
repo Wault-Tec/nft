@@ -1,4 +1,5 @@
 import styled from "styled-components";
+
 export interface Props {
     p?: {
     fontWeight: string,
@@ -42,4 +43,9 @@ font-size: 16px;
 `
 export const SocialIcon = styled.div`
 display: flex;
+& > svg {
+    :not(:last-child){
+    margin-right: 30px;
+}
+}
 `
