@@ -7,5 +7,8 @@ const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 root.render(
-    <App />
+  <div>
+  <App />
+  <div className="PurpleCircle"></div>
+  </div>
 );

@@ -7,18 +7,17 @@ export interface Props {
 }
 
 export const HeaderWrapper = styled.div`
-/* background-color: rgba(255, 255, 255, 0.1); */
-background-color: #000;
 display: flex;
 align-items: center;
+background-color: rgba(255, 255, 255, 0.1);
 `
 export const Container = styled.div`
+backdrop-filter: blur(20px);
 padding: 28px 41px 28px 41px;
 display: flex;
 justify-content: space-between;
 width: 100%;
 align-items: center;
-
 `
 export const Logo = styled.div`
 display: flex;
@@ -38,6 +37,10 @@ color: #fff;
 display: flex;
 `
 export const TextNav = styled.div`
+&:hover {
+    border-bottom: 1px solid #fff;
+}
+cursor: pointer;
 margin-right: 42px;
 font-size: 16px;
 `

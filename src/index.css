@@ -1,9 +1,22 @@
 @import url(https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900);
 body {
-  margin: 0;
-  font-family: 'Inter', sans-serif;
+    margin: 0;
+    background-color: #0A0A0A;
+    font-family: 'Inter', sans-serif;
 }
 
 code {
-  font-family: 'Inter', sans-serif;
+    font-family: 'Inter', sans-serif;
+}
+
+.PurpleCircle {
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    background: linear-gradient(90deg, #FB03F5, #AA9CFF);
+    top: -200px;
+    left: -150px;
+    border-radius: 50%;
+    z-index: -999;
+    filter: blur(140px)
 }
