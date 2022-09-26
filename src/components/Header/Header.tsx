@@ -2,11 +2,8 @@ import React, {FC} from 'react';
 import {HeaderWrapper, Logo, TextLogo, NavMenu, TextNav, SocialIcon, Container} from './header.style'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFacebookF, faTwitter, faInstagram } from '@fortawesome/free-brands-svg-icons'
-interface Props {
-    
-}
  
-const Header: FC<Props> = () => {
+const Header: FC = () => {
     return ( 
         <HeaderWrapper>
             <Container>
