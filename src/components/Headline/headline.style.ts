@@ -8,6 +8,7 @@ align-items: center;
 justify-content: left;
 margin-left: 40px;
 height: 100%;
+overflow: hidden;
 `
 export const ContentLeft = styled.div`
 max-width: 890px;

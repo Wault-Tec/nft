@@ -6,6 +6,7 @@ import Description from "../assets/block/Text/Text"
 import hands from '../assets/image/hands.png'
 import Particles from 'react-particles'
 import {loadFull} from "tsparticles"
+import './particle.style.css'
 interface Particle { 
     width?: string;
     height?: string;
@@ -20,17 +21,6 @@ const Headline: FC = () => {
       }, []);
     return (
         <HeadlineWrapper>
-            <ContentLeft>
-                <TitleUp textTitleUp="Music for NFT creators."/>
-                <TitleDown textTitleDown="Digital Music for fans."/>
-                <Description description="Music NFTs will continue to revolutionize the way that artists and fans create community together as we enter the upcoming year — undoubtedly changing the trajectory of countless budding music careers."/> 
-                <Powered>
-                    <p>Powered by</p>
-                </Powered>
-            </ContentLeft>
-            <ContentRight>
-                <img src={hands} alt=""/>
-            </ContentRight>
             <Particles <Particle>
       id="tsparticles"
       init={particlesInit}
@@ -41,10 +31,6 @@ const Headline: FC = () => {
         fpsLimit: 120,
         interactivity: {
           events: {
-            onClick: {
-              enable: true,
-              mode: "push",
-            },
             onHover: {
               enable: true,
               mode: "repulse",
@@ -63,7 +49,7 @@ const Headline: FC = () => {
         },
         particles: {
           color: {
-            value: "#ffffff",
+            value: "#FB03F5",
           },
           links: {
             color: "#ffffff",
@@ -105,6 +91,17 @@ const Headline: FC = () => {
         detectRetina: true,
       }}
     />
+            <ContentLeft>
+                <TitleUp textTitleUp="Music for NFT creators."/>
+                <TitleDown textTitleDown="Digital Music for fans."/>
+                <Description description="Music NFTs will continue to revolutionize the way that artists and fans create community together as we enter the upcoming year — undoubtedly changing the trajectory of countless budding music careers."/> 
+                <Powered>
+                    <p>Powered by</p>
+                </Powered>
+            </ContentLeft>
+            <ContentRight>
+                <img src={hands} alt=""/>
+            </ContentRight>
         </HeadlineWrapper>
     );
 }
