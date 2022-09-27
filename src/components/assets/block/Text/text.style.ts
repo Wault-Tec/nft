@@ -10,7 +10,6 @@ export const TitleUp = styled.div`
 font-size: 80px;
 font-weight: 400;
 color: #fff;
-white-space: nowrap;
 margin: 0;
 `
 export const TitleDown = styled.div`

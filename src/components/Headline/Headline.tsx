@@ -1,8 +1,9 @@
-import {FC} from 'react'
-import {HeadlineWrapper, ContentLeft, Powered} from './headline.style'
-import TitleUp from "../assets/Text/Text"
-import TitleDown from "../assets/Text/Text"
-import Description from "../assets/Text/Text"
+import React, {FC} from 'react'
+import {HeadlineWrapper, ContentLeft, Powered, ContentRight} from './headline.style'
+import TitleUp from "../assets/block/Text/Text"
+import TitleDown from "../assets/block/Text/Text"
+import Description from "../assets/block/Text/Text"
+import hands from '../assets/image/hands.png'
  
 const Headline: FC = () => {
     return (
@@ -15,6 +16,9 @@ const Headline: FC = () => {
                     <p>Powered by</p>
                 </Powered>
             </ContentLeft>
+            <ContentRight>
+                <img src={hands} alt=""/>
+            </ContentRight>
         </HeadlineWrapper>
     );
 }
