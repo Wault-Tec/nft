@@ -4,3 +4,4 @@ declare module "*.png" {
  }
  declare const BUILD_MODE_PRODUCTION: boolean;
  declare const BUILD_VERSION: string;
+ 
