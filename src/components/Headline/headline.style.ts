@@ -8,13 +8,14 @@ align-items: center;
 margin-left: 40px;
 height: 100%;
 overflow: hidden;
-justify-content: space-between;
 position: relative;
+flex-direction: column;
 `
 export const ContentLeft = styled.div`
 max-width: 890px;
 display: flex;
 flex-direction: column;
+justify-content: left;
 `
 
 export const Powered = styled.div`
@@ -31,4 +32,11 @@ left: 1200px;
 top: 50px;
 & > img {
 }
+`
+export const BottomMarque = styled.div`
+  display: flex;
+  color: #fff;
+  font-size: 24px;
+  font-weight: 300;
+  width: 100%;
 `

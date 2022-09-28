@@ -4,22 +4,22 @@ import {
   ContentLeft,
   Powered,
   ContentRight,
+  BottomMarque,
 } from "./headline.style";
 import TitleUp from "../assets/block/Text/Text";
 import TitleDown from "../assets/block/Text/Text";
 import Description from "../assets/block/Text/Text";
 import hands from "../assets/image/hands.png";
-import Spline from '@splinetool/react-spline';
 import Particles from "react-particles";
 import { loadFull } from "tsparticles";
 import "./particle.style.css";
+import Marquee from 'react-double-marquee';
 interface Particle {
   width?: string;
   height?: string;
 }
 const Headline: FC = () => {
   const particlesInit = useCallback(async (engine: Engine) => {
-    console.log(engine);
     await loadFull(engine);
   }, []);
   const particlesLoaded = useCallback(
@@ -113,6 +113,9 @@ const Headline: FC = () => {
       <ContentRight>
         <img src={hands} alt="" />
       </ContentRight>
+      <BottomMarque>
+        <Marquee speed={0.04}>new way to reach the new fan</Marquee>
+      </BottomMarque>
     </HeadlineWrapper>
     </>
   );
