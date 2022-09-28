@@ -6,7 +6,7 @@ display: flex;
 padding-top: 170px;
 align-items: center;
 margin-left: 40px;
-height: 100%;
+height: 814px;
 overflow: hidden;
 position: relative;
 flex-direction: column;
